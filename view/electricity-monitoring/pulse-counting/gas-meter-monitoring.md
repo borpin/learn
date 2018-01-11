@@ -30,7 +30,9 @@ Paul Allen ([MarsFlyer](https://openenergymonitor.org/emon/user/602)) has succes
 
 The sensor mentioned above is difficult to source in the UK, neither RS nor Farnell electronics stock it. A suitable substitute, Diodes AH180N has very similar specifications, is readily available and very low cost. The AH180N is also in a SOT23 package, has an average current consumption of 8-16uA and operates between 2.5 and 5.5 Volts.
 
+A useful resource in understanding how a Hall Sensor works can be found [here](https://standexelectronics.com/resources/magnet-interaction/multiple-reed-switch-actuation-with-rotating-2-pole-magnet/).
 
+Note, if the Hall Sensor selected is too sensitive it may register 2 rising edges on a single rotation.  Again depending on the sensitivity, this may be reliable (in which case it is easily allowed for) or unreliable.  If the latter a solution may be to move the sensor away from the magnet so only one pulse is reliably detected.
 
 #### Resources
 
@@ -58,6 +60,8 @@ The sensor mentioned above is difficult to source in the UK, neither RS nor Farn
 
 - [emonTH gas with phototransistor or reed switch](https://openenergymonitor.org/emon/node/3600)
 
+- [Standex Electronics - Magnet Interaction](https://standexelectronics.com/resources/magnet-interaction/)
+
 #### Battery power opperation
 
 - [Battery-efficient pulse measurement](https://openenergymonitor.org/emon/node/1943)
@@ -79,3 +83,9 @@ The sensor mentioned above is difficult to source in the UK, neither RS nor Farn
 - [https://openenergymonitor.org/emon/node/2850](https://openenergymonitor.org/emon/node/2850)
  
 - [https://openenergymonitor.org/emon/node/3338](https://openenergymonitor.org/emon/node/3338)
+
+#### Gas measuring community discussions
+
+- [https://community.openenergymonitor.org/t/measuring-gas-consumption/6159](https://community.openenergymonitor.org/t/measuring-gas-consumption/6159)
+
+- [https://community.openenergymonitor.org/t/help-with-gas-pulse-processing-on-emoncms/6155](https://community.openenergymonitor.org/t/help-with-gas-pulse-processing-on-emoncms/6155)
